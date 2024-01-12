@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@rainbow-me/rainbowkit": "^1.3.3",
+    "framer-motion": "^10.18.0",
+    "viem": "^1.21.4",
+    "wagmi": "^1.4.13"
+  }
+}
