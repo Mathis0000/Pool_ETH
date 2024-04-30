@@ -16,10 +16,15 @@ import { infuraProvider } from 'wagmi/providers/infura';
 const { chains, publicClient } = configureChains(
   [sepolia],
   [
-    infuraProvider({ apiKey: "8c1b27267a58405583b4da2943d9cae7
-" })
+    infuraProvider({
+      apiKey: "8c1b27267a58405583b4da2943d9cae7",
+      options: {
+        timeout: 30000 // délai d'attente de 30 secondes
+      }
+    })
   ]
 );
+
 
 const { connectors } = getDefaultWallets({
   appName: 'Pool App',
