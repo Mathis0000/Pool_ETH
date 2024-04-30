@@ -11,10 +11,13 @@ import { configureChains, createConfig, WagmiConfig } from 'wagmi';
 
 import { publicProvider } from 'wagmi/providers/public';
 
+import { infuraProvider } from 'wagmi/providers/infura';
+
 const { chains, publicClient } = configureChains(
   [sepolia],
   [
-    publicProvider()
+    infuraProvider({ apiKey: "8c1b27267a58405583b4da2943d9cae7
+" })
   ]
 );
 
